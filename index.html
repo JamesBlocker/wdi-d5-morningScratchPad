@@ -60,6 +60,25 @@
         return result;
     }
 
+    function picture(char, size) {
+        var str = '';
+        for (var i = 0; i < size; i ++) {
+            str = str + char;
+        }
+        for (var i = 0; i < size; i++) {
+            console.log(str);
+        }
+    }
+
+    function pow(base, exponent) {
+        var result = 1;
+        for (var i = 0; i < exponent; i++) {
+            result = mul(result, base);
+        }
+        
+        return result;
+    }
+
     </script>
 </body>
 </html>
