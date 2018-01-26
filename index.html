@@ -35,7 +35,15 @@
     }
 
     function initials(firstName, lastName) {
-        return firstName[0] +lastName[0];
+        return firstName[0] + lastName[0];
+    }
+
+    function initFull() {
+        var name = prompt(" What is your first and last name?");
+        var names = name.split(' ');
+        var firstI = names[0][0].toUpperCase()
+        var lastI = names[1][0].toUpperCase()
+        return firstI + lastI;
     }
 
     </script>
