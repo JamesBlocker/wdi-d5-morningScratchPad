@@ -41,9 +41,23 @@
     function initFull() {
         var name = prompt(" What is your first and last name?");
         var names = name.split(' ');
-        var firstI = names[0][0].toUpperCase()
-        var lastI = names[1][0].toUpperCase()
+        if (names.length < 2 || names.length > 2) {
+            alert("I'm sorry this is only meant to work with 2 names");
+            return initFull();
+        } else {
+        var firstI = names[0][0].toUpperCase();
+        var lastI = names[1][0].toUpperCase();
         return firstI + lastI;
+        }
+    }
+
+    function lines(x) {
+        var result = '';
+        for (var i = 0; i < x; i++) {
+            result = result + '-' + '\n';
+        }
+
+        return result;
     }
 
     </script>
